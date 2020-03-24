@@ -23,55 +23,64 @@ body {
   font-weight: 700;
 }
 
-.header h1 {
-  font-size: 28px;
-}
-
 .container {
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px 600px 300px 150px;
+  grid-template-rows: 250px 200px 600px 150px;
   border: 2px solid yellow;
   grid-template-areas:
     "hd"
+    "nav"
     "main"
     "sd"
     "ft";
 }
 
-.top-box {
+.header {
+  grid-area: hd;
+  border: 2px solid green;
+
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-flexbox {
   display: flex;
   border: 2px solid blue;
+  background-color: #151412;
 }
 
 .title {
   width: 30%;
   margin-left: 5%;
   text-transform: uppercase;
+  color: #c7a17a;
 }
 
 .nav {
+  grid-area: nav;
   width: 75%;
   text-transform: uppercase;
-}
 
+}
 
 ul li {
   float: right;
   margin-right: 5%;
-  padding: 10px 0 0 0;
-  font-size: 20px;
+  padding: px 0 0 0;
+  font-size: 18px;
   list-style-type: none;
+  color: white;
 }
 
 .box {
   border: 1px solid red;
-  background-color: #F8FA9D;
 }
 
-.header {
-  grid-area: hd;
-}
 
 .content {
   grid-area: main;
@@ -92,10 +101,11 @@ ul li {
 @media(min-width:600px) and (max-width:1100) {
   .container {
     display: grid;
-    grid-template-columns: 300px 300px 200px 400px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 300px 100px 600px 150px;
     grid-template-areas: "hd hd hd hd hd hd hd hd"
-      "main main main main main sd sd"
+      "nav nav nav nav nav nav nav nav"
+      "main main main main sd sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid red;
   }
@@ -108,9 +118,10 @@ ul li {
 @media(min-width:1101px) {
   .container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 400px;
-    grid-template-rows: 300px 400px 300px;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 300px 100px 600px 150px;
     grid-template-areas: "hd hd hd hd hd hd hd hd"
+      "nav nav nav nav nav nav nav nav"
       "main main main main main sd sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid red;
