@@ -18,7 +18,7 @@ form {
 }
 
 body {
-  background-color: #c7a17a;
+
   font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
 }
@@ -28,7 +28,6 @@ body {
 }
 
 .container {
-
   display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 250px 600px 300px 150px;
@@ -54,8 +53,6 @@ body {
 .nav {
   width: 75%;
   text-transform: uppercase;
-
-
 }
 
 
@@ -65,11 +62,7 @@ ul li {
   padding: 10px 0 0 0;
   font-size: 20px;
   list-style-type: none;
-  color: white;
-
 }
-
-
 
 .box {
   border: 1px solid red;
@@ -101,12 +94,10 @@ ul li {
     display: grid;
     grid-template-columns: 300px 300px 200px 400px;
     grid-template-rows: 300px 300px 300px;
-    grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
+    grid-template-areas: "hd hd hd hd hd hd hd hd"
       "main main main main main sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid red;
-
   }
 }
 
@@ -119,8 +110,7 @@ ul li {
     display: grid;
     grid-template-columns: 200px 200px 200px 400px;
     grid-template-rows: 300px 400px 300px;
-    grid-template-areas:
-      "hd hd hd hd hd hd hd hd"
+    grid-template-areas: "hd hd hd hd hd hd hd hd"
       "main main main main main sd sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid red;
