@@ -15,11 +15,12 @@ form {
   margin 0;
   padding: 0;
   border: 0;
+
 }
 
 a {
   text-decoration: none;
-  color: #c7a17a;
+  color: #111;
 }
 
 a:hover {
@@ -30,16 +31,16 @@ body {
 
   font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
+
 }
 
 .container {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px 200px 600px 150px;
+  grid-template-columns: 460px;
+  grid-template-rows: 300px 600px 300px 300px;
   border: 2px solid yellow;
-  grid-template-areas:
-    "hd"
-    "nav"
+
+  grid-template-areas: "hd"
     "main"
     "sd"
     "ft";
@@ -47,43 +48,39 @@ body {
 
 .header {
   grid-area: hd;
-  border: 2px solid green;
-  background-image: url(https://www.pngonly.com/wp-content/uploads/2017/05/Coffee-PNG-Transparent.png);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  background-image: url('/images/coffee.png');
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
-
-
 
 .top-flexbox {
   display: flex;
-  border: 2px solid blue;
-
+  flex-direction: row;
 }
 
 .title {
+  display: flex;
   width: 30%;
   margin-left: 5%;
   text-transform: uppercase;
-  color: #c7a17a;
+  color: #111;
 }
 
 .nav {
-
   width: 75%;
   text-transform: uppercase;
-
 }
 
 ul li {
-  float: right;
-  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 20%;
   padding: 15px 0 0 0;
   font-size: 18px;
   list-style-type: none;
-  color: white;
+
 }
 
 .box {
@@ -105,33 +102,26 @@ ul li {
 }
 
 /*------------------------------*/
-/* medium width screen*/
+/* larger screens*/
 /*------------------------------*/
 
-@media(min-width:600px) and (max-width:1100) {
+@media(min-width:600px) {
   .container {
     display: grid;
-    grid-template-columns: 300px 200px;
-    grid-template-rows: 300px 100px 600px 150px;
-    grid-template-areas: "hd hd hd hd hd hd hd hd"
-      "main main main main sd sd sd"
-      "ft ft ft ft ft ft ft ft";
-    border: 2px solid red;
+    grid-template-columns: 400px 200px 200px;
+    grid-template-rows: 300px 600px 150px;
+    grid-template-areas: "hd hd hd hd hd hd"
+      "main main main sd sd sd"
+      "ft ft ft ft ft ft";
+    border: 2px solid purple;
   }
-}
 
-/*------------------------------*/
-/* large width screen*/
-/*------------------------------*/
-
-@media(min-width:1101px) {
-  .container {
-    display: grid;
-    grid-template-columns: 300px 200px;
-    grid-template-rows: 300px 100px 600px 150px;
-    grid-template-areas: "hd hd hd hd hd hd hd hd"
-      "main main main main main sd sd sd"
-      "ft ft ft ft ft ft ft ft";
-    border: 2px solid red;
+  ul li {
+    flex-direction: row;
+    float: right;
+    margin-right: 5%;
+    padding: 15px 0 0 0;
+    list-style-type: none;
   }
+
 }
