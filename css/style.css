@@ -40,9 +40,9 @@ body {
   grid-template-rows: 300px 600px 300px 300px;
   border: 2px solid yellow;
 
-  grid-template-areas: "hd"
+  grid-template-areas:
+    "hd"
     "main"
-    "sd"
     "ft";
 }
 
@@ -93,10 +93,6 @@ ul li {
 
 }
 
-.sidebar {
-  grid-area: sd;
-}
-
 .footer {
   grid-area: ft;
 }
@@ -111,7 +107,7 @@ ul li {
     grid-template-columns: 400px 200px 200px;
     grid-template-rows: 300px 600px 150px;
     grid-template-areas: "hd hd hd hd hd hd"
-      "main main main sd sd sd"
+      "main main main main main main"
       "ft ft ft ft ft ft";
     border: 2px solid purple;
   }
