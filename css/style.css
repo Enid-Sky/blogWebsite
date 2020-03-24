@@ -1,14 +1,23 @@
-.container {
+* {
+  box-sizing: border-box;
+}
+
+body {
   background-color: tan;
+}
+
+.container {
+
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 250px 800px 300px 100px;
+  grid-template-rows: 250px 600px 300px 150px;
   border: 2px solid yellow;
   grid-template-areas:
     "hd"
     "main"
     "sd"
     "ft";
+
 }
 
 .box {
@@ -30,4 +39,39 @@
 
 .footer {
   grid-area: ft;
+}
+
+/*------------------------------*/
+/* medium width screen*/
+/*------------------------------*/
+
+@media(min-width:600px) and (max-width:1100) {
+  .container {
+    display: grid;
+    grid-template-columns: 300px 300px 200px 400px;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main sd sd"
+      "ft ft ft ft ft ft ft ft";
+    border: 2px solid red;
+
+  }
+}
+
+/*------------------------------*/
+/* large width screen*/
+/*------------------------------*/
+
+@media(min-width:1101px) {
+  .container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 400px;
+    grid-template-rows: 300px 400px 300px;
+    grid-template-areas:
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main sd sd sd"
+      "ft ft ft ft ft ft ft ft";
+    border: 2px solid red;
+  }
 }
