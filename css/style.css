@@ -1,6 +1,26 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img,
+form {
+  margin 0;
+  padding: 0;
+  border: 0;
+}
+
 body {
   background-color: #c7a17a;
-
+  font-family: Oswald, Helvetica, sans-serif;
+  font-weight: 700;
 }
 
 .header h1 {
@@ -18,22 +38,24 @@ body {
     "main"
     "sd"
     "ft";
-
 }
 
 .top-box {
   display: flex;
   border: 2px solid blue;
-
 }
 
 .title {
   width: 30%;
   margin-left: 5%;
+  text-transform: uppercase;
 }
 
 .nav {
   width: 75%;
+  text-transform: uppercase;
+
+
 }
 
 
@@ -43,6 +65,8 @@ ul li {
   padding: 10px 0 0 0;
   font-size: 20px;
   list-style-type: none;
+  color: white;
+
 }
 
 
