@@ -17,6 +17,15 @@ form {
   border: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #c7a17a;
+}
+
+a:hover {
+  color: #c59b9b;
+}
+
 body {
 
   font-family: Oswald, Helvetica, sans-serif;
@@ -71,7 +80,7 @@ body {
 ul li {
   float: right;
   margin-right: 5%;
-  padding: px 0 0 0;
+  padding: 15px 0 0 0;
   font-size: 18px;
   list-style-type: none;
   color: white;
