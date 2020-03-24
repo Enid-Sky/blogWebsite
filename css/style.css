@@ -1,9 +1,10 @@
-* {
-  box-sizing: border-box;
+body {
+  background-color: #c7a17a;
+
 }
 
-body {
-  background-color: tan;
+.header h1 {
+  font-size: 28px;
 }
 
 .container {
@@ -19,6 +20,32 @@ body {
     "ft";
 
 }
+
+.top-box {
+  display: flex;
+  border: 2px solid blue;
+
+}
+
+.title {
+  width: 30%;
+  margin-left: 5%;
+}
+
+.nav {
+  width: 75%;
+}
+
+
+ul li {
+  float: right;
+  margin-right: 5%;
+  padding: 10px 0 0 0;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+
 
 .box {
   border: 1px solid red;
