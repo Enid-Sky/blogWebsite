@@ -48,19 +48,19 @@ body {
 .header {
   grid-area: hd;
   border: 2px solid green;
-
-}
-
-.header-image {
+  background-image: url(https://www.pngonly.com/wp-content/uploads/2017/05/Coffee-PNG-Transparent.png);
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
+
+
 
 .top-flexbox {
   display: flex;
   border: 2px solid blue;
-  background-color: #151412;
+
 }
 
 .title {
@@ -71,7 +71,7 @@ body {
 }
 
 .nav {
-  grid-area: nav;
+
   width: 75%;
   text-transform: uppercase;
 
@@ -93,6 +93,7 @@ ul li {
 
 .content {
   grid-area: main;
+
 }
 
 .sidebar {
@@ -113,7 +114,6 @@ ul li {
     grid-template-columns: 300px 200px;
     grid-template-rows: 300px 100px 600px 150px;
     grid-template-areas: "hd hd hd hd hd hd hd hd"
-      "nav nav nav nav nav nav nav nav"
       "main main main main sd sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid red;
@@ -130,7 +130,6 @@ ul li {
     grid-template-columns: 300px 200px;
     grid-template-rows: 300px 100px 600px 150px;
     grid-template-areas: "hd hd hd hd hd hd hd hd"
-      "nav nav nav nav nav nav nav nav"
       "main main main main main sd sd sd"
       "ft ft ft ft ft ft ft ft";
     border: 2px solid red;
