@@ -25,10 +25,10 @@ a {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   color: rgb(12, 11, 12);
   text-align: center;
-  padding: 14px 20px;
+  padding: 2px 8px;
 
 }
 
@@ -211,6 +211,11 @@ p {
 
   .nav {
     justify-content: center;
+  }
+
+  a {
+    font-size: 1em;
+    padding: 14px 20px;
   }
 
   ul li {
