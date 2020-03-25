@@ -18,13 +18,28 @@ form {
 
 }
 
+
+
 a {
   text-decoration: none;
-  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 1em;
+  color: rgb(12, 11, 12);
+  text-align: center;
+  padding: 14px 20px;
+
 }
 
 a:hover {
-  color: #c59b9b;
+  color: #fff;
+  background: #c7a17a;
+  box-shadow: 0px 4px 0px 0px #fff;
+}
+
+/*a:hover {
+  color: #c59b9b;*/
 }
 
 body {
