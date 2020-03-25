@@ -62,7 +62,7 @@ body {
 }
 
 .title {
-  width: 50%;
+  width: 30%;
   margin-left: 5%;
   text-transform: uppercase;
   color: #111;
@@ -70,7 +70,7 @@ body {
 }
 
 .subtitle {
-  width: 50%;
+  width: 30%;
   margin-left: 5%;
   text-align: left;
 
@@ -81,9 +81,7 @@ body {
   grid-area: nav;
   display: flex;
   justify-content: space-around;
-  text-align: center;
   text-transform: uppercase;
-  list-style-type: none;
   list-style-type: none;
   font-size: 1em;
   border: 1px solid pink;
