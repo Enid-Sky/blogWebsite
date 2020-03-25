@@ -36,7 +36,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 460px;
+  /*grid-template-columns: 460px;*/
   grid-template-rows: 300px 75px 600px 300px;
   border: 1px solid yellow;
 
@@ -178,16 +178,7 @@ p {
 /*------------------------------*/
 
 @media(min-width:600px) {
-  .container {
-    display: grid;
-    grid-template-columns: 400px 200px 200px;
-    grid-template-rows: 300px 75px 600px 150px;
-    grid-template-areas: "hd hd hd hd hd hd"
-      "nav nav nav nav nav nav"
-      "main main main main main main"
-      "ft ft ft ft ft ft";
 
-  }
 
   .top-flexbox {
     display: flex;
