@@ -109,6 +109,7 @@ ul li {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   overflow: hidden;
+
 }
 
 p {
@@ -121,8 +122,42 @@ p {
 
 }
 
+.content .card .blog-image {
+
+  box-sizing: border-box;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #000000;
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -60px auto 0px auto;
+  z-index: 2;
+  position: relative;
+  box-shadow: inset 0px -10px 8px -8px rgba(0, 0, 0, 0.5);
+  background-image: url('/images/coffee.png');
+
+}
+
 .card {
   border: 1px solid red;
+
+}
+
+.button {
+  background-color: pink;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  margin-bottom: 20px;
 
 }
 
