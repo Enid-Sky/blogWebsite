@@ -27,6 +27,11 @@ body {
   font-weight: 700;
 }
 
+p {
+  font-size: 12px;
+
+}
+
 
 .container {
   display: grid;
@@ -107,10 +112,18 @@ ul li {
 
 }
 
+.main-title {
+  text-align: center;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+img {
+  max-height: 250px;
 }
 
 /*-----------------*/
@@ -120,6 +133,7 @@ ul li {
 .footer {
   grid-area: ft;
   background-color: #eeebe1;
+  text-align: center;
 }
 
 /*-----------------*/
@@ -147,7 +161,7 @@ a:hover {
 
 @media(min-width:600px) {
   .container {
-    grid-template-rows: 330px 65px 1fr 150px;
+    grid-template-rows: 330px 65px 1fr 200px;
 
     grid-template-areas:
       "hd"
@@ -172,6 +186,10 @@ a:hover {
     justify-content: center;
   }
 
+  img {
+    max-height: 350px;
+  }
+
   a {
     font-size: 1em;
   }
@@ -180,6 +198,12 @@ a:hover {
     margin-right: 4%;
   }
 
+  .card-content {
+    max-width: 300px;
+  }
 
+  .main-area {
+    padding-top: 25px;
+  }
 
 }
