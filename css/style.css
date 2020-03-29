@@ -4,16 +4,12 @@ div,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p,
 ul,
-ol,
 li,
 img,
 form {
-  margin 0;
+  margin: 0;
   padding: 0;
   border: 0;
 }
@@ -25,11 +21,11 @@ body {
 
   font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
+  background-color: rgb(253, 252, 252);
 }
 
 p {
   font-size: 12px;
-
 }
 
 
@@ -62,6 +58,7 @@ p {
 .top-flexbox {
   display: flex;
   flex-direction: column;
+  margin: 20px;
 }
 
 .title {
@@ -75,6 +72,7 @@ p {
   margin-left: 5%;
   padding: 70px 0 0 0;
   text-align: left;
+
 }
 
 
@@ -87,17 +85,19 @@ p {
   grid-area: nav;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
   text-transform: uppercase;
   font-size: 1em;
   background-color: #eeebe1;
+  padding-top: 10px;
+
+
 }
 
 ul li {
-  margin: 10px;
-  padding: 0;
   list-style-type: none;
+  display: inline-block;
 }
 
 
@@ -136,6 +136,15 @@ img {
   text-align: center;
 }
 
+.social {
+  margin: 20px;
+}
+
+.social-links {
+  margin: 20px;
+}
+
+
 /*-----------------*/
 /*Styling*/
 /*-----------------*/
@@ -143,12 +152,12 @@ img {
 a {
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 5px;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   font-size: 0.8em;
-  color: rgb(12, 11, 12);
+  color: rgb(19, 18, 19);
   text-align: center;
-  padding: 2px 8px;
+  padding: 0 30px;
+  letter-spacing: 5px;
 }
 
 a:hover {
@@ -194,16 +203,19 @@ a:hover {
     font-size: 1em;
   }
 
-  ul li {
-    margin-right: 4%;
-  }
-
   .card-content {
-    max-width: 300px;
+    max-width: 200px;
+    letter-spacing: 3px;
+
   }
 
   .main-area {
     padding-top: 25px;
   }
+
+  .social-links {
+    margin: 40px;
+  }
+
 
 }
