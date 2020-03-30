@@ -35,13 +35,14 @@ p {
 .container {
   display: grid;
   width: 80vw;
-  height: 100vh;
+  height: 20vh;
   margin: auto;
-  grid-template-rows: 330px 65px 1fr 200px;
+  grid-template-rows: 330px 60px 1fr 100px 200px;
   grid-template-areas:
     "hd"
     "nav"
     "main"
+    "pg"
     "ft";
 }
 
@@ -109,7 +110,6 @@ ul li {
 .main-area {
   grid-area: main;
   background-color: #f7f5f4;
-  padding: 15px 0 15px 0;
 }
 
 .main-title {
@@ -139,6 +139,34 @@ img:hover {
 }
 
 /*-----------------*/
+/*Pages*/
+/*-----------------*/
+
+.pages {
+  grid-area: pg;
+  text-align: center;
+  padding: 50px;
+  background-color: #f7f5f4;
+}
+
+
+.pagination a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: rgb(185, 159, 102);
+  color: white;
+}
+
+
+.pagination a:hover:not(.active) {
+  background-color: rgb(206, 203, 203);
+}
+
+/*-----------------*/
 /*Footer*/
 /*-----------------*/
 
@@ -149,11 +177,22 @@ img:hover {
 }
 
 .social {
-  margin: 10px;
+  padding-top: 30px;
 }
 
 .social-links {
-  margin: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.copyright {
+  font-weight: 300;
+
+
+
+
+
+
 }
 
 
@@ -212,4 +251,5 @@ a:hover {
     padding: 0 30px;
     letter-spacing: 5px;
   }
+
 }
