@@ -50,9 +50,9 @@ p {
 .header {
   grid-area: hd;
   background-image: url('/images/coffee.png');
-
   background-repeat: no-repeat;
   background-position: bottom;
+
 
 }
 
@@ -123,8 +123,15 @@ ul li {
   justify-content: space-evenly;
 }
 
+.card {
+  min-width: 300px;
+
+
+}
+
 img {
   max-height: 250px;
+
 }
 
 img:hover {
@@ -162,7 +169,7 @@ a {
   color: rgb(19, 18, 19);
   text-align: center;
   padding: 0 10px;
-  letter-spacing: 3Spx;
+  letter-spacing: 3px;
 }
 
 a:hover {
@@ -176,7 +183,6 @@ a:hover {
 @media(min-width:600px) {
   .container {
     grid-template-rows: 330px 65px 1fr 200px;
-
     grid-template-areas:
       "hd"
       "nav"
@@ -211,8 +217,9 @@ a:hover {
   }
 
   .card-content {
-    max-width: 200px;
+    max-width: 300px;
     letter-spacing: 3px;
+
   }
 
   .main-area {
