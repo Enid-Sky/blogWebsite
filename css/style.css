@@ -146,6 +146,7 @@ img:hover {
 /*-----------------*/
 
 .subscribe {
+  grid-area: sub;
   background-color: rgb(19, 18, 19);
   color: white;
   text-transform: full-width;
