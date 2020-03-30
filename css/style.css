@@ -26,7 +26,7 @@ body {
 
 p {
   font-size: 0.9em;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
   text-transform: initial;
   line-height: 1.3em;
 }
@@ -35,14 +35,15 @@ p {
 .container {
   display: grid;
   width: 80vw;
-  height: 20vh;
+  height: 100vh;
   margin: auto;
-  grid-template-rows: 330px 60px 1fr 100px 200px;
+  grid-template-rows: 330px 60px 1fr 150px 150px 200px;
   grid-template-areas:
     "hd"
     "nav"
     "main"
     "pg"
+    "sub"
     "ft";
 }
 
@@ -62,12 +63,12 @@ p {
 .top-flexbox {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  margin: 20px 0 0 0;
 }
 
 .title {
   width: 70%;
-  margin-left: 3%;
+  margin: 0 0 0 3%;
   text-transform: uppercase;
   color: #111;
   font-size: 1.2em;
@@ -93,7 +94,7 @@ p {
   text-transform: uppercase;
   font-size: 1em;
   background-color: #eeebe1;
-  padding-top: 0.6em;
+  padding: 0.6em 0 0 0;
 }
 
 ul li {
@@ -114,7 +115,7 @@ ul li {
 
 .main-title {
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0 0 0;
 }
 
 .cards {
@@ -139,6 +140,34 @@ img:hover {
   opacity: 0.7;
 }
 
+
+/*-----------------*/
+/*Subscribe*/
+/*-----------------*/
+
+.subscribe {
+  background-color: rgb(19, 18, 19);
+  color: white;
+  text-transform: full-width;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.form {
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 30%;
+  margin: 8px 0;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
 /*-----------------*/
 /*Pages*/
 /*-----------------*/
@@ -146,10 +175,9 @@ img:hover {
 .pages {
   grid-area: pg;
   text-align: center;
-  padding: 50px;
+  padding: 50px 0 0 0;
   background-color: #f7f5f4;
 }
-
 
 .pagination a {
   color: black;
@@ -162,10 +190,10 @@ img:hover {
   color: white;
 }
 
-
 .pagination a:hover:not(.active) {
   background-color: rgb(206, 203, 203);
 }
+
 
 /*-----------------*/
 /*Footer*/
@@ -178,22 +206,15 @@ img:hover {
 }
 
 .social {
-  padding-top: 30px;
+  padding: 30px 0 0 0;
 }
 
 .social-links {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 0 40px 0;
 }
 
 .copyright {
-  font-weight: 300;
-
-
-
-
-
-
+  font-weight: 200;
 }
 
 
@@ -234,7 +255,7 @@ a:hover {
   .subtitle {
     width: 60%;
     text-align: right;
-    margin-right: 5%;
+    margin-right: 0 5% 0 0;
     padding: 0;
   }
 
@@ -244,13 +265,25 @@ a:hover {
 
   .card-content {
     max-width: 300px;
-    letter-spacing: 3px;
+    letter-spacing: 0.2em;
+  }
+
+  .subscribe {
+    padding: 20px 0 0 0;
+  }
+
+  .form {
+    padding: 15px 0 0 0;
+  }
+
+  input[type=text] {
+    width: 30%;
   }
 
   a {
     font-size: 1em;
     padding: 0 30px;
-    letter-spacing: 5px;
+    letter-spacing: 0.3em;
   }
 
 }
