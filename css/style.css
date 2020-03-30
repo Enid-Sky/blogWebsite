@@ -25,7 +25,10 @@ body {
 }
 
 p {
-  font-size: 12px;
+  font-size: 0.9em;
+  margin-top: 10px;
+  text-transform: initial;
+  line-height: 1.3em;
 }
 
 
@@ -52,8 +55,6 @@ p {
   background-image: url('/images/coffee.png');
   background-repeat: no-repeat;
   background-position: bottom;
-
-
 }
 
 .top-flexbox {
@@ -64,16 +65,16 @@ p {
 
 .title {
   width: 30%;
-  margin-left: 5%;
+  margin-left: 3%;
   text-transform: uppercase;
   color: #111;
+  font-size: 1.2em;
 }
 
 .subtitle {
-  margin-left: 5%;
-  padding: 70px 0 0 0;
+  margin-left: 3%;
+  padding: 50px 0 0 0;
   text-align: left;
-
 }
 
 
@@ -91,9 +92,7 @@ p {
   text-transform: uppercase;
   font-size: 1em;
   background-color: #eeebe1;
-  padding-top: 10px;
-
-
+  padding-top: 0.6em;
 }
 
 ul li {
@@ -110,7 +109,6 @@ ul li {
 .main-area {
   grid-area: main;
   background-color: #f7f5f4;
-
 }
 
 .main-title {
@@ -125,13 +123,14 @@ ul li {
 
 .card {
   min-width: 300px;
+}
 
-
+.card-content {
+  padding-top: 0.6em;
 }
 
 img {
   max-height: 250px;
-
 }
 
 img:hover {
@@ -149,7 +148,7 @@ img:hover {
 }
 
 .social {
-  margin: 20px;
+  margin: 10px;
 }
 
 .social-links {
@@ -168,7 +167,7 @@ a {
   font-size: 0.8em;
   color: rgb(19, 18, 19);
   text-align: center;
-  padding: 0 10px;
+  padding: 0 0.6em;
   letter-spacing: 3px;
 }
 
@@ -181,14 +180,6 @@ a:hover {
 /*------------------------------*/
 
 @media(min-width:600px) {
-  .container {
-    grid-template-rows: 330px 65px 1fr 200px;
-    grid-template-areas:
-      "hd"
-      "nav"
-      "main"
-      "ft";
-  }
 
   .top-flexbox {
     display: flex;
@@ -202,9 +193,6 @@ a:hover {
     padding: 0;
   }
 
-  .nav {
-    justify-content: center;
-  }
 
   img {
     max-height: 350px;
@@ -219,16 +207,10 @@ a:hover {
   .card-content {
     max-width: 300px;
     letter-spacing: 3px;
-
   }
 
   .main-area {
     padding-top: 25px;
   }
-
-  .social-links {
-    margin: 40px;
-  }
-
 
 }
