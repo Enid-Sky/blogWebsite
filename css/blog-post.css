@@ -1,0 +1,302 @@
+/* reset code */
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+img,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*----------------------*/
+/*Layout*/
+/*----------------------*/
+body {
+
+  font-family: Oswald, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: rgb(253, 252, 252);
+}
+
+p {
+  font-size: 0.9em;
+  margin: 10px 0 0 0;
+  text-transform: initial;
+  line-height: 1.3em;
+}
+
+
+.container {
+  display: grid;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  grid-template-rows: 330px 60px 1fr 100px 600px 150px 200px;
+  grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "author"
+    "rel"
+    "sub"
+    "ft";
+}
+
+/*--------------*/
+/*Header*/
+/*--------------*/
+
+
+.header {
+  grid-area: hd;
+  background-image: url('/images/coffee.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 300px;
+}
+
+.top-flexbox {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 0;
+}
+
+.title {
+  width: 70%;
+  margin: 0 0 0 3%;
+  text-transform: uppercase;
+  color: #111;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  width: 30%;
+  text-align: right;
+}
+
+
+/*--------------------*/
+/*Navigation*/
+/*--------------------*/
+
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: #eeebe1;
+  padding: 0.6em 0 0 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*----------------------*/
+/*Main Content*/
+/*-----------------------*/
+
+.main-area {
+  grid-area: main;
+  background-color: #f7f5f4;
+}
+
+.main-title {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+img {
+  max-height: 600px;
+}
+
+
+/*-----------------*/
+/*Author*/
+/*-----------------*/
+
+.author-area {
+  grid-area: author;
+  display: flex;
+  border: 2px solid pink;
+}
+
+.author-image {
+  max-height: 90px;
+  border-radius: 50%;
+  border: solid 2px blue;
+}
+
+.author-bio {
+  border: solid 2px green;
+}
+
+
+
+/*----------------------*/
+/*Related Posts*/
+/*-----------------------*/
+
+.related-posts {
+  grid-area: rel;
+  background-color: #f7f5f4;
+}
+
+.related-title {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  min-width: 300px;
+}
+
+.card-content {
+  padding-top: 0.6em;
+}
+
+img {
+  max-height: 250px;
+}
+
+img:hover {
+  opacity: 0.7;
+}
+
+
+/*-----------------*/
+/*Subscribe*/
+/*-----------------*/
+
+.subscribe {
+  grid-area: sub;
+  background-color: rgb(19, 18, 19);
+  color: white;
+  text-transform: full-width;
+  text-align: center;
+  padding: 10px 0 0 0;
+}
+
+.form {
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 30%;
+  margin: 8px 0;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*-----------------*/
+/*Footer*/
+/*-----------------*/
+
+.footer {
+  grid-area: ft;
+  background-color: #eeebe1;
+  text-align: center;
+}
+
+.social {
+  padding: 30px 0 0 0;
+}
+
+.social-links {
+  padding: 20px 0 40px 0;
+}
+
+.copyright {
+  font-weight: 200;
+}
+
+
+/*-----------------*/
+/*Styling*/
+/*-----------------*/
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 0.9em;
+  color: rgb(19, 18, 19);
+  text-align: center;
+  padding: 0 0.6em;
+  letter-spacing: 3px;
+}
+
+a:hover {
+  color: #c7a17a
+}
+
+/*------------------------------*/
+/* larger screens*/
+/*------------------------------*/
+
+@media(min-width:600px) {
+
+  .header {
+    background-size: 400px;
+  }
+
+  .top-flexbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subtitle {
+    width: 60%;
+    text-align: right;
+    margin-right: 0 5% 0 0;
+    padding: 0;
+  }
+
+  img {
+    max-height: 350px;
+  }
+
+  .card-content {
+    max-width: 300px;
+    letter-spacing: 0.2em;
+  }
+
+  .subscribe {
+    padding: 20px 0 0 0;
+  }
+
+  .form {
+    padding: 15px 0 0 0;
+  }
+
+  input[type=text] {
+    width: 30%;
+  }
+
+  a {
+    font-size: 1em;
+    padding: 0 30px;
+    letter-spacing: 0.3em;
+  }
+
+}
