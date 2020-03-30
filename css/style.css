@@ -50,6 +50,7 @@ p {
 .header {
   grid-area: hd;
   background-image: url('/images/coffee.png');
+
   background-repeat: no-repeat;
   background-position: bottom;
 
@@ -124,6 +125,10 @@ ul li {
 
 img {
   max-height: 250px;
+}
+
+img:hover {
+  opacity: 0.7;
 }
 
 /*-----------------*/
@@ -208,7 +213,6 @@ a:hover {
   .card-content {
     max-width: 200px;
     letter-spacing: 3px;
-
   }
 
   .main-area {
