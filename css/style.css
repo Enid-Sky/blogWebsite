@@ -181,9 +181,10 @@ input[type=text] {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  max-width: 200px;
 }
 
-input[type=button] {
+.button {
   background: #c7a17a;
   border: none;
   color: white;
@@ -193,6 +194,11 @@ input[type=button] {
   cursor: pointer;
   border-radius: 4px;
   margin: 2px 2px;
+
+}
+
+.button:hover {
+  background: #888;
 
 }
 
