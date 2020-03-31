@@ -52,7 +52,7 @@ p {
   width: 80vw;
   height: 100vh;
   margin: auto;
-  grid-template-rows: 330px 60px 1fr 125px 1fr 1fr 1fr;
+  grid-template-rows: 330px 60px 1fr 175px 1fr 1fr 1fr;
   grid-template-areas:
     "hd"
     "nav"
@@ -167,7 +167,7 @@ ul li {
 .author-image {
   max-height: 100px;
   border-radius: 50%;
-  margin: 12px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .author-bio {
@@ -177,6 +177,7 @@ ul li {
   font-weight: 400;
   font-style: italic;
   letter-spacing: 0.1em;
+
 }
 
 /*-----------------*/
@@ -192,7 +193,7 @@ ul li {
 }
 
 .form {
-  padding: 15px 0 0 0;
+  padding: 1px 0 15px 0;
   text-align: center;
 }
 
@@ -329,8 +330,14 @@ a:hover {
     letter-spacing: 0.2em;
   }
 
+  .author-image {
+    max-height: 100px;
+    border-radius: 50%;
+    margin: 30px 0 0 0;
+  }
+
   .author-bio {
-    padding: 20px 0 0 20px;
+    padding: 45px 0 0 45px;
   }
 
   .subscribe {
