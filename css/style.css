@@ -22,7 +22,6 @@ body {
   font-family: Oswald, Helvetica, sans-serif;
   font-weight: 700;
   background-color: rgb(253, 252, 252);
-
 }
 
 h1 {
@@ -54,6 +53,7 @@ p {
   width: 80vw;
   height: 100vh;
   margin: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: 330px 60px 1fr 150px 200px 200px;
   grid-template-areas:
     "hd"
@@ -199,7 +199,6 @@ input[type=text] {
 
 .button:hover {
   background: #888;
-
 }
 
 
@@ -239,7 +238,6 @@ input[type=text] {
   background-color: #eeebe1;
   text-align: center;
   margin: 0 0 20px 0;
-
 }
 
 .social {
@@ -281,9 +279,6 @@ a:hover {
 /*------------------------------*/
 
 @media(min-width:600px) {
-
-
-
 
   .header {
     background-size: 400px;
@@ -331,5 +326,4 @@ a:hover {
     padding: 0 30px;
     letter-spacing: 0.3em;
   }
-
 }

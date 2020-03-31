@@ -38,7 +38,7 @@ h3 {
 }
 
 p {
-  font-family: Open Sans !important;
+  font-family: Open Sans, sans-serif;
   font-size: 15px;
   font-style: normal;
   font-variant: normal;
@@ -52,6 +52,7 @@ p {
   width: 80vw;
   height: 100vh;
   margin: auto;
+  grid-template-columns: 1fr;
   grid-template-rows: 330px 60px 1fr 175px 1fr 1fr 1fr;
   grid-template-areas:
     "hd"
@@ -153,6 +154,7 @@ ul li {
 }
 
 
+
 /*-----------------*/
 /*Author*/
 /*-----------------*/
@@ -177,7 +179,6 @@ ul li {
   font-weight: 400;
   font-style: italic;
   letter-spacing: 0.1em;
-
 }
 
 /*-----------------*/
@@ -234,7 +235,6 @@ input[type=text] {
 .related-posts {
   grid-area: rel;
   background-color: #f7f5f4;
-
 }
 
 
@@ -262,9 +262,7 @@ img {
   max-height: 225px;
 }
 
-img:hover {
-  opacity: 0.7;
-}
+
 
 
 
@@ -276,7 +274,6 @@ img:hover {
   grid-area: ft;
   background-color: #eeebe1;
   text-align: center;
-
 }
 
 .social {
@@ -290,7 +287,6 @@ img:hover {
 .copyright p {
   font-weight: 100;
   font-size: 12px;
-
 }
 
 
@@ -377,5 +373,4 @@ a:hover {
     padding: 0 30px;
     letter-spacing: 0.3em;
   }
-
 }
