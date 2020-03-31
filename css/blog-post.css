@@ -37,7 +37,7 @@ p {
   width: 80vw;
   height: 100vh;
   margin: auto;
-  grid-template-rows: 330px 60px 1fr 100px 600px 150px 200px;
+  grid-template-rows: 330px 60px 1fr 125px 600px 150px 200px;
   grid-template-areas:
     "hd"
     "nav"
@@ -110,6 +110,7 @@ ul li {
 .main-area {
   grid-area: main;
   background-color: #f7f5f4;
+  padding: 40px 0;
 }
 
 .main-title {
@@ -117,8 +118,13 @@ ul li {
   padding: 30px 0 0 0;
 }
 
-img {
-  max-height: 600px;
+
+.post-title h1 {
+  text-align: center;
+}
+
+.post-title p {
+  padding: 40px 40px;
 }
 
 
@@ -129,17 +135,25 @@ img {
 .author-area {
   grid-area: author;
   display: flex;
-  border: 2px solid pink;
+
+  justify-content: center;
+  background-color: #e2e1e0;
 }
 
 .author-image {
-  max-height: 90px;
-  border-radius: 50%;
-  border: solid 2px blue;
+  max-height: 100px;
+  border-radius: 30%;
+  margin: 12px 0 0 0;
+
+
 }
 
 .author-bio {
-  border: solid 2px green;
+  padding: 0 0 0 20px;
+  width: 50%;
+  color: black;
+  font-weight: 500;
+  font-style: italic;
 }
 
 
@@ -148,10 +162,13 @@ img {
 /*Related Posts*/
 /*-----------------------*/
 
+
 .related-posts {
   grid-area: rel;
   background-color: #f7f5f4;
+
 }
+
 
 .related-title {
   text-align: center;
@@ -170,6 +187,8 @@ img {
 
 .card-content {
   padding-top: 0.6em;
+
+
 }
 
 img {
@@ -272,13 +291,20 @@ a:hover {
     padding: 0;
   }
 
-  img {
-    max-height: 350px;
+  .post-title p {
+    padding: 0 10%;
   }
+
+
 
   .card-content {
     max-width: 300px;
     letter-spacing: 0.2em;
+
+  }
+
+  .author-bio {
+    padding: 20px 0 0 20px;
   }
 
   .subscribe {
@@ -298,5 +324,7 @@ a:hover {
     padding: 0 30px;
     letter-spacing: 0.3em;
   }
+
+  .main-image .img {}
 
 }
