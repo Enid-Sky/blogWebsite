@@ -24,6 +24,18 @@ body {
   background-color: rgb(253, 252, 252);
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
 p {
   font-family: Open Sans !important;
   font-size: 15px;
@@ -208,6 +220,8 @@ input[type=text] {
   grid-area: ft;
   background-color: #eeebe1;
   text-align: center;
+  margin: 0 0 20px 0;
+
 }
 
 .social {
@@ -215,11 +229,13 @@ input[type=text] {
 }
 
 .social-links {
-  padding: 20px 0 40px 0;
+  padding: 20px 0 20px 0;
 }
 
-.copyright {
-  font-weight: 200;
+.copyright p {
+  font-weight: 100;
+  font-size: 12px;
+
 }
 
 

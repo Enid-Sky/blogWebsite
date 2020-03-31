@@ -25,6 +25,18 @@ body {
   color: #161616;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
 p {
   font-family: Open Sans !important;
   font-size: 15px;
@@ -32,7 +44,6 @@ p {
   font-variant: normal;
   font-weight: 300;
   line-height: 24px;
-
 }
 
 
@@ -41,14 +52,14 @@ p {
   width: 80vw;
   height: 100vh;
   margin: auto;
-  grid-template-rows: 330px 60px 1fr 125px 600px 150px 200px;
+  grid-template-rows: 330px 60px 1fr 125px 150px 1fr;
   grid-template-areas:
     "hd"
     "nav"
     "main"
     "author"
-    "rel"
     "sub"
+    "rel"
     "ft";
 }
 
@@ -76,7 +87,7 @@ p {
   margin: 0 0 0 3%;
   text-transform: uppercase;
   color: #111;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .subtitle {
@@ -115,7 +126,6 @@ ul li {
   grid-area: main;
   background-color: #f7f5f4;
   padding: 40px 0;
-  border: solid 2px coral;
 }
 
 
@@ -151,7 +161,6 @@ ul li {
 .author-area {
   grid-area: author;
   display: flex;
-
   justify-content: center;
   background-color: #e2e1e0;
 }
@@ -160,8 +169,6 @@ ul li {
   max-height: 100px;
   border-radius: 30%;
   margin: 12px 0 0 0;
-
-
 }
 
 .author-bio {
@@ -183,6 +190,7 @@ ul li {
 .related-posts {
   grid-area: rel;
   background-color: #f7f5f4;
+  border: 2px solid coral;
 
 }
 
@@ -226,7 +234,8 @@ img:hover {
   color: white;
   text-transform: full-width;
   text-align: center;
-  padding: 10px 0 0 0;
+
+
 }
 
 .form {
@@ -251,6 +260,7 @@ input[type=text] {
   grid-area: ft;
   background-color: #eeebe1;
   text-align: center;
+
 }
 
 .social {
@@ -258,11 +268,13 @@ input[type=text] {
 }
 
 .social-links {
-  padding: 20px 0 40px 0;
+  padding: 20px 0 20px 0;
 }
 
-.copyright {
-  font-weight: 200;
+.copyright p {
+  font-weight: 100;
+  font-size: 12px;
+
 }
 
 
