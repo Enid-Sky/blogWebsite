@@ -25,11 +25,15 @@ body {
 }
 
 p {
-  font-size: 0.9em;
-  margin: 10px 0 0 0;
+  font-family: Open Sans !important;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 24px;
   text-transform: initial;
-  line-height: 1.3em;
 }
+
 
 
 .container {
