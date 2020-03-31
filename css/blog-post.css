@@ -142,8 +142,8 @@ ul li {
 }
 
 .posting-date {
-  font-weight: 300;
   text-align: center;
+  color: rgb(185, 159, 102);
 }
 
 .post-title p {
