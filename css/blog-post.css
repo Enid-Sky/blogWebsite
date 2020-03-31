@@ -52,14 +52,14 @@ p {
   width: 80vw;
   height: 100vh;
   margin: auto;
-  grid-template-rows: 330px 60px 1fr 125px 150px 1fr;
+  grid-template-rows: 330px 60px 1fr 125px 1fr 1fr 1fr;
   grid-template-areas:
     "hd"
     "nav"
     "main"
     "author"
-    "sub"
     "rel"
+    "sub"
     "ft";
 }
 
@@ -166,7 +166,7 @@ ul li {
 
 .author-image {
   max-height: 100px;
-  border-radius: 30%;
+  border-radius: 50%;
   margin: 12px 0 0 0;
 }
 
@@ -179,7 +179,31 @@ ul li {
   letter-spacing: 0.1em;
 }
 
+/*-----------------*/
+/*Subscribe*/
+/*-----------------*/
 
+.subscribe {
+  grid-area: sub;
+  background-color: rgb(19, 18, 19);
+  color: white;
+  text-transform: full-width;
+  text-align: center;
+}
+
+.form {
+  padding: 15px 0 0 0;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 30%;
+  margin: 8px 0;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
 /*----------------------*/
 /*Related Posts*/
@@ -189,7 +213,6 @@ ul li {
 .related-posts {
   grid-area: rel;
   background-color: #f7f5f4;
-  border: 2px solid coral;
 
 }
 
@@ -223,33 +246,6 @@ img:hover {
 }
 
 
-/*-----------------*/
-/*Subscribe*/
-/*-----------------*/
-
-.subscribe {
-  grid-area: sub;
-  background-color: rgb(19, 18, 19);
-  color: white;
-  text-transform: full-width;
-  text-align: center;
-
-
-}
-
-.form {
-  padding: 15px 0 0 0;
-  text-align: center;
-}
-
-input[type=text] {
-  width: 30%;
-  margin: 8px 0;
-  padding: 10px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
 
 /*-----------------*/
 /*Footer*/
@@ -331,7 +327,6 @@ a:hover {
   .card-content {
     max-width: 300px;
     letter-spacing: 0.2em;
-
   }
 
   .author-bio {
@@ -339,7 +334,7 @@ a:hover {
   }
 
   .subscribe {
-    padding: 20px 0 0 0;
+    padding: 30px 0 30px 0;
   }
 
   .form {
