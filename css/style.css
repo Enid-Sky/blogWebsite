@@ -71,10 +71,10 @@ p {
 
 .header {
   grid-area: hd;
-  background-image: url('/images/coffee.png');
+  background-image: url(http://pngimg.com/uploads/cappuccino/cappuccino_PNG61.png);
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: 300px;
+  background-size: 400px;
 }
 
 .top-flexbox {
@@ -281,7 +281,7 @@ a:hover {
 @media(min-width:600px) {
 
   .header {
-    background-size: 400px;
+    background-size: 500px;
   }
 
   .top-flexbox {
