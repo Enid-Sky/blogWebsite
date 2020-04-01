@@ -1,0 +1,400 @@
+/* reset code */
+body,
+div,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+img,
+ol,
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*----------------------*/
+/*Layout*/
+/*----------------------*/
+body {
+
+  font-family: Oswald, Helvetica, sans-serif;
+  font-weight: 700;
+  background-color: rgb(253, 252, 252);
+  color: #161616;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+p {
+  font-family: Open Sans, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+
+.container {
+  display: grid;
+  width: 80vw;
+  height: 100vh;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 330px 60px 1fr 175px 1fr 1fr 1fr;
+  grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "author"
+    "rel"
+    "sub"
+    "ft";
+}
+
+/*--------------*/
+/*Header*/
+/*--------------*/
+
+
+.header {
+  grid-area: hd;
+  background-image: url(http://pngimg.com/uploads/cappuccino/cappuccino_PNG61.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 400px;
+
+}
+
+.top-flexbox {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 0;
+}
+
+.title {
+  width: 70%;
+  text-transform: uppercase;
+  color: #111;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  width: 30%;
+  text-align: right;
+}
+
+
+/*--------------------*/
+/*Navigation*/
+/*--------------------*/
+
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1em;
+  background-color: #eeebe1;
+  padding: 0.6em 0 0 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+/*----------------------*/
+/*Main Content*/
+/*-----------------------*/
+
+.main-area {
+  grid-area: main;
+  background-color: #f7f5f4;
+  padding: 40px 0;
+}
+
+
+.hero-image {
+  display: flex;
+  margin: 5px auto;
+  max-width: 250px;
+  max-height: 400px;
+}
+
+
+
+.credit {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+
+.post-title h1 {
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.posting-date {
+  text-align: center;
+  color: rgb(185, 159, 102);
+}
+
+.post-title p {
+  font-family: "Open Sans";
+  padding: 20px 40px;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.locations {
+  margin: 40px;
+  text-align: center;
+  font-family: "Open Sans";
+  line-height: 2em;
+  list-style-type: none;
+}
+
+
+
+/*-----------------*/
+/*Author*/
+/*-----------------*/
+
+.author-area {
+  grid-area: author;
+  display: flex;
+  justify-content: center;
+  background-color: #e2e1e0;
+}
+
+.author-image {
+  max-height: 100px;
+  border-radius: 50%;
+  margin: 30px 0 0 0;
+}
+
+.author-bio {
+  padding: 0 0 0 20px;
+  width: 50%;
+  color: black;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.1em;
+}
+
+/*-----------------*/
+/*Subscribe*/
+/*-----------------*/
+
+.subscribe {
+  grid-area: sub;
+  background-color: rgb(19, 18, 19);
+  color: white;
+  text-transform: full-width;
+  text-align: center;
+}
+
+.form {
+  padding: 15px 0 15px 0;
+  text-align: center;
+}
+
+input[type=text] {
+  width: 30%;
+  margin: 8px 0;
+  padding: 10px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  max-width: 200px;
+}
+
+.button {
+  background: #c7a17a;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 2px 2px;
+
+}
+
+.button:hover {
+  background: #888;
+
+}
+
+
+/*----------------------*/
+/*Related Posts*/
+/*-----------------------*/
+
+
+.related-posts {
+  grid-area: rel;
+  background-color: #f7f5f4;
+}
+
+
+.related-title {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card {
+  min-width: 300px;
+}
+
+.card-content {
+  padding-top: 0.6em;
+
+}
+
+img {
+  max-height: 225px;
+}
+
+
+
+
+
+/*-----------------*/
+/*Footer*/
+/*-----------------*/
+
+.footer {
+  grid-area: ft;
+  background-color: #eeebe1;
+  text-align: center;
+}
+
+.social {
+  padding: 30px 0 0 0;
+}
+
+.social-links {
+  padding: 20px 0 20px 0;
+}
+
+.copyright p {
+  font-weight: 100;
+  font-size: 12px;
+}
+
+
+/*-----------------*/
+/*Styling*/
+/*-----------------*/
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-size: 0.9em;
+  color: rgb(19, 18, 19);
+  text-align: center;
+  padding: 0 0.6em;
+  letter-spacing: 3px;
+}
+
+a:hover {
+  color: #c7a17a
+}
+
+/*------------------------------*/
+/* larger screens*/
+/*------------------------------*/
+
+@media(min-width:600px) {
+
+  .header {
+    background-size: 500px;
+  }
+
+  .top-flexbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title {
+    padding: 0 0 0 5%;
+  }
+
+  .subtitle {
+    width: 60%;
+    text-align: right;
+    margin: 0 5% 0 0;
+    padding: 0;
+  }
+
+  .hero-image {
+    min-width: 600px;
+    min-height: 800px;
+  }
+
+  .supporting-image {
+    min-width: 600px;
+    min-height: 900px;
+
+  }
+
+  .card-content {
+    max-width: 300px;
+    letter-spacing: 0.2em;
+  }
+
+  .author-image {
+    max-height: 100px;
+    border-radius: 50%;
+    margin: 30px 0 0 0;
+  }
+
+  .author-bio {
+    padding: 45px 0 0 45px;
+  }
+
+  .subscribe {
+    padding: 30px 0 30px 0;
+  }
+
+  .form {
+    padding: 15px 0 0 0;
+  }
+
+  input[type=text] {
+    width: 30%;
+  }
+
+  a {
+    font-size: 1em;
+    padding: 0 30px;
+    letter-spacing: 0.3em;
+  }
+}
