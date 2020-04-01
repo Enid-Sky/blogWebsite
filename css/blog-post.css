@@ -137,6 +137,12 @@ ul li {
   max-height: 400px;
 }
 
+.credit {
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
 
 .post-title h1 {
   text-align: center;
