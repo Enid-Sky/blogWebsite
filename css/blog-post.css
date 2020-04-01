@@ -71,7 +71,7 @@ p {
 
 .header {
   grid-area: hd;
-  background-image: url('/images/coffee.png');
+  background-image: url('/images/coffee.PNG');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 300px;
