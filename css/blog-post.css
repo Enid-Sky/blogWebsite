@@ -137,6 +137,13 @@ ul li {
   max-height: 400px;
 }
 
+.supporting-image {
+  display: flex;
+  margin: 5px auto;
+  max-width: 250px;
+  max-height: 600px;
+}
+
 .credit {
   text-align: center;
   font-size: 0.8em;
@@ -347,6 +354,11 @@ a:hover {
     min-height: 800px;
   }
 
+  .supporting-image {
+    min-width: 600px;
+    min-height: 900px;
+
+  }
 
   .card-content {
     max-width: 300px;
