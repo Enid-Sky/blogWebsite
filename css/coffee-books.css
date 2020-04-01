@@ -76,7 +76,6 @@ p {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 400px;
-
 }
 
 .top-flexbox {
@@ -236,7 +235,6 @@ input[type=text] {
   cursor: pointer;
   border-radius: 4px;
   margin: 2px 2px;
-
 }
 
 .button:hover {
@@ -273,7 +271,6 @@ input[type=text] {
 
 .card-content {
   padding-top: 0.6em;
-
 }
 
 img {
@@ -358,11 +355,6 @@ a:hover {
     min-height: 800px;
   }
 
-  .supporting-image {
-    min-width: 600px;
-    min-height: 900px;
-
-  }
 
   .card-content {
     max-width: 300px;
