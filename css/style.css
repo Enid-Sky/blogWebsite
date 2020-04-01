@@ -292,7 +292,7 @@ a:hover {
   .subtitle {
     width: 60%;
     text-align: right;
-    margin-right: 0 5% 0 0;
+    padding: 0 5% 0 0;
     padding: 0;
   }
 
