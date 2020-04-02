@@ -1,4 +1,5 @@
 @import "./media.css";
+@import "./header.css";
 
 /* reset code */
 body,
@@ -67,36 +68,6 @@ p {
     "ft";
 }
 
-/*--------------*/
-/*Header*/
-/*--------------*/
-
-
-.header {
-  grid-area: hd;
-  background-image: url(http://pngimg.com/uploads/cappuccino/cappuccino_PNG61.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: 400px;
-}
-
-.top-flexbox {
-  display: flex;
-  flex-direction: row;
-  margin: 20px 0 0 0;
-}
-
-.title {
-  width: 70%;
-  text-transform: uppercase;
-  color: #111;
-  font-size: 1.2em;
-}
-
-.subtitle {
-  width: 30%;
-  text-align: right;
-}
 
 
 /*--------------------*/
