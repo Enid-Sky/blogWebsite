@@ -1,3 +1,5 @@
+@import "./media.css";
+
 /* reset code */
 body,
 div,
@@ -13,6 +15,7 @@ form {
   padding: 0;
   border: 0;
 }
+
 
 /*----------------------*/
 /*Layout*/
@@ -271,58 +274,4 @@ a {
 
 a:hover {
   color: #c7a17a
-}
-
-/*------------------------------*/
-/* larger screens*/
-/*------------------------------*/
-
-@media(min-width:600px) {
-
-  .header {
-    background-size: 500px;
-  }
-
-  .top-flexbox {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .subtitle {
-    width: 60%;
-    text-align: right;
-    padding: 0 5% 0 0;
-    padding: 0;
-  }
-
-  .title {
-    padding: 0 0 0 5%;
-  }
-
-  img {
-    max-height: 350px;
-  }
-
-  .card-content {
-    max-width: 300px;
-    letter-spacing: 0.2em;
-  }
-
-  .subscribe {
-    padding: 20px 0 0 0;
-  }
-
-  .form {
-    padding: 15px 0 0 0;
-  }
-
-  input[type=text] {
-    width: 30%;
-  }
-
-  a {
-    font-size: 1em;
-    padding: 0 30px;
-    letter-spacing: 0.3em;
-  }
 }
