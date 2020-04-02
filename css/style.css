@@ -1,5 +1,6 @@
-@import "./media.css";
-@import "./header.css";
+@import "./footer.css";
+@import "./subscribe.css";
+@import "./pagination.css";
 
 /* reset code */
 body,
@@ -68,7 +69,36 @@ p {
     "ft";
 }
 
+/*--------------*/
+/*Header*/
+/*--------------*/
 
+
+.header {
+  grid-area: hd;
+  background-image: url(http://pngimg.com/uploads/cappuccino/cappuccino_PNG61.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 400px;
+}
+
+.top-flexbox {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0 0 0;
+}
+
+.title {
+  width: 70%;
+  text-transform: uppercase;
+  color: #111;
+  font-size: 1.2em;
+}
+
+.subtitle {
+  width: 30%;
+  text-align: right;
+}
 
 /*--------------------*/
 /*Navigation*/
@@ -132,103 +162,6 @@ a img:hover {
 
 
 /*-----------------*/
-/*Subscribe*/
-/*-----------------*/
-
-.subscribe {
-  grid-area: sub;
-  background-color: rgb(19, 18, 19);
-  color: white;
-  text-transform: full-width;
-  text-align: center;
-}
-
-.form {
-  padding: 15px 0 15px 0;
-  text-align: center;
-}
-
-input[type=text] {
-  width: 30%;
-  margin: 8px 0;
-  padding: 10px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  max-width: 200px;
-}
-
-.button {
-  background: #c7a17a;
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  margin: 2px 2px;
-}
-
-.button:hover {
-  background: #888;
-}
-
-
-/*-----------------*/
-/*Pages*/
-/*-----------------*/
-
-.pages {
-  grid-area: pg;
-  text-align: center;
-  padding: 50px 0 0 0;
-  background-color: #f7f5f4;
-}
-
-.pagination a {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-.pagination a.active {
-  background-color: rgb(185, 159, 102);
-  color: white;
-}
-
-.pagination a:hover:not(.active) {
-  background-color: rgb(206, 203, 203);
-}
-
-
-/*-----------------*/
-/*Footer*/
-/*-----------------*/
-
-.footer {
-  grid-area: ft;
-  background-color: #eeebe1;
-  text-align: center;
-  margin: 0 0 20px 0;
-}
-
-.social {
-  padding: 30px 0 0 0;
-}
-
-.social-links {
-  padding: 20px 0 20px 0;
-}
-
-.copyright p {
-  font-weight: 100;
-  font-size: 12px;
-
-}
-
-
-/*-----------------*/
 /*Styling*/
 /*-----------------*/
 
@@ -245,4 +178,58 @@ a {
 
 a:hover {
   color: #c7a17a
+}
+
+/*------------------------------*/
+/* larger screens*/
+/*------------------------------*/
+
+@media(min-width:600px) {
+
+  .header {
+    background-size: 500px;
+  }
+
+  .top-flexbox {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subtitle {
+    width: 60%;
+    text-align: right;
+    padding: 0 5% 0 0;
+    padding: 0;
+  }
+
+  .title {
+    padding: 0 0 0 5%;
+  }
+
+  img {
+    max-height: 350px;
+  }
+
+  .card-content {
+    max-width: 300px;
+    letter-spacing: 0.2em;
+  }
+
+  .subscribe {
+    padding: 20px 0 0 0;
+  }
+
+  .form {
+    padding: 15px 0 0 0;
+  }
+
+  input[type=text] {
+    width: 30%;
+  }
+
+  a {
+    font-size: 1em;
+    padding: 0 30px;
+    letter-spacing: 0.3em;
+  }
 }
