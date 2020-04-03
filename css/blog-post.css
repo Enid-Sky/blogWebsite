@@ -1,5 +1,5 @@
-@import "./footer.css";
-@import "./subscribe.css";
+@import "css/footer.css";
+@import "css/subscribe.css";
 
 /* reset code */
 body,
