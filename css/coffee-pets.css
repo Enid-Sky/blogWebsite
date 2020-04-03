@@ -1,3 +1,6 @@
+@import "./footer.css";
+@import "./subscribe.css";
+
 /* reset code */
 body,
 div,
@@ -197,50 +200,6 @@ a img:hover {
   letter-spacing: 0.1em;
 }
 
-/*-----------------*/
-/*Subscribe*/
-/*-----------------*/
-
-.subscribe {
-  grid-area: sub;
-  background-color: rgb(19, 18, 19);
-  color: white;
-  text-transform: full-width;
-  text-align: center;
-}
-
-.form {
-  padding: 15px 0 15px 0;
-  text-align: center;
-}
-
-input[type=text] {
-  width: 30%;
-  margin: 8px 0;
-  padding: 10px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  max-width: 200px;
-}
-
-.button {
-  background: #c7a17a;
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px;
-  margin: 2px 2px;
-}
-
-.button:hover {
-  background: #888;
-
-}
-
 
 /*----------------------*/
 /*Related Posts*/
@@ -276,34 +235,6 @@ input[type=text] {
 img {
   max-height: 225px;
 }
-
-
-
-
-
-/*-----------------*/
-/*Footer*/
-/*-----------------*/
-
-.footer {
-  grid-area: ft;
-  background-color: #eeebe1;
-  text-align: center;
-}
-
-.social {
-  padding: 30px 0 0 0;
-}
-
-.social-links {
-  padding: 20px 0 20px 0;
-}
-
-.copyright p {
-  font-weight: 100;
-  font-size: 12px;
-}
-
 
 /*-----------------*/
 /*Styling*/
