@@ -1,6 +1,6 @@
-# Coffee Lovers Blog
+# Pour Over Perfect - A Coffee Lovers Blog
 
-A personal blog website template built entirely from scartch using HTML and CSS.
+A personal blog website template built entirely from scratch using HTML and CSS.
 
 ## Features Include: 
 - Multiple pages.
