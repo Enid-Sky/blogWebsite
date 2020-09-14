@@ -15,5 +15,8 @@ A personal blog website template built entirely from scratch using HTML and CSS.
 - Flexbox
 - Grid
 
+
 ![image](https://user-images.githubusercontent.com/43654264/93032803-4eb62880-f5e8-11ea-98ac-49d815dd76d7.png)
+
+![image](https://user-images.githubusercontent.com/43654264/93033448-2c71da00-f5eb-11ea-9c4f-132af7ebe07c.png)
 
