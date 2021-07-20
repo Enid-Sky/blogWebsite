@@ -6,7 +6,7 @@ A personal blog website template built entirely from scratch using HTML and CSS.
 - Multiple pages.
 - Custom Flexbox and Grid based layouts. 
 - Subscription form.
-- Media queries to correctly display pages on mobile, tanles and desktop. 
+- Media queries to correctly display pages on mobile, tablets and desktop. 
 
 ## Tech stack
 
